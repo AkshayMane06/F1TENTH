@@ -20,9 +20,10 @@ source install/local_setup.bash
 ros2 launch f1tenth_gym_ros gym_bridge_launch.py
 
 **Issues Faced**
-1. OpenGL issue 
-Related issue link
-https://github.com/ros2/rviz/issues/929
+1. Encountered issues with terminal communication and graphics when set up was done in WSL, so had to switch to a dual-boot setup with Ubuntu.
+2. Faced an issue with OpenGL while launching the simulator, which was resolved by running the command `export LIBGL_ALWAYS_SOFTWARE=1`. A similar issue and solution can be found in the mentioned thread https://github.com/ros2/rviz/issues/929 
+3. If unable to extend the partition despite having free space, consider using a tool like AOMEI Partition Assistant to manage the partition extension.
+4. In case of limited space on an existing Ubuntu installation, use GParted Live on a bootable USB drive to merge existing free partitions.
 
 Execute below command 
 export LIBGL_ALWAYS_SOFTWARE=1 
