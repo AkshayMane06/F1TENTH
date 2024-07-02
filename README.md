@@ -23,6 +23,8 @@ ros2 launch f1tenth_gym_ros gym_bridge_launch.py
 1. OpenGL issue 
 Related issue link
 https://github.com/ros2/rviz/issues/929
+
+Execute below command 
 export LIBGL_ALWAYS_SOFTWARE=1 
 
 **Creating new package :**
